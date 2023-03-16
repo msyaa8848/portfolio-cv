@@ -18,6 +18,12 @@ class authController extends Controller
     {
         return Socialite::driver('google')->redirect();
     }
+    #function redirect()
+    #{
+    #    Socialite::driver('google')
+    #    ->with(['redirect_uri' => 'https://e028524.website/callback'])
+    #    ->redirect();
+    #}
 
     function callback()
     {
